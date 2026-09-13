@@ -4,36 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title> Wealth secret </title>
+<title>Wealth Secret</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-<!-- Meta Pixel Code -->
+<!-- ================= META PIXEL ================= -->
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+{
+    if(f.fbq)return;
+
+    n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+    };
+
+    if(!f._fbq)f._fbq=n;
+
+    n.push=n;
+    n.loaded=true;
+    n.version='2.0';
+    n.queue=[];
+
+    t=b.createElement(e);
+    t.async=true;
+    t.src=v;
+
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s);
+
+}(window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1076312014894575');
+
+fbq('init', '4518482625053782');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    
-    
+
+<noscript>
+<img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=4518482625053782&ev=PageView&noscript=1"
+>
+</noscript>
+<!-- ================= END META PIXEL ================= -->
+
 
 <style>
 
-/* ============================= */
-/* MAIN HEADLINE */
-/* ============================= */
+/* =========================
+   MAIN HEADLINE
+========================= */
 
 .card h2 {
     width: 100%;
@@ -41,14 +65,16 @@ src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
     box-sizing: border-box;
 
     margin: 15px 0 10px;
-    padding: 0 5px;
+    padding: 0 3px;
 
     text-align: center;
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
 
-    font-size: clamp(22px, 7vw, 34px);
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(21px, 7vw, 34px);
     line-height: 1.2;
     font-weight: 800;
 
@@ -60,16 +86,12 @@ src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
         #ffd700
     );
 
+    background-size: 250% auto;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    background-size: 250% auto;
-
     animation: headlineGlow 3s linear infinite;
-
-    text-shadow:
-        0 0 12px rgba(255,215,0,0.35),
-        0 0 25px rgba(0,229,255,0.20);
 }
 
 @keyframes headlineGlow {
@@ -85,11 +107,12 @@ src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
 }
 
 
-/* ============================= */
-/* TOP LINE */
-/* ============================= */
+/* =========================
+   TOP TEXT
+========================= */
 
 .live {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
     color: #00e5ff;
@@ -97,40 +120,54 @@ src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
 }
 
 
-/* ============================= */
-/* SUBTITLE */
-/* ============================= */
+/* =========================
+   SUBTITLE
+========================= */
 
 .subtitle {
     text-align: center;
     line-height: 1.6;
     margin: 0 auto 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-/* ============================= */
-/* TELEGRAM BUTTON */
-/* ============================= */
+/* =========================
+   TELEGRAM BUTTON
+========================= */
 
 .btn {
     display: block;
+    width: 100%;
+    box-sizing: border-box;
+
     text-align: center;
     text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
+
+    cursor: pointer;
 }
 
 
-/* ============================= */
-/* POPUP */
-/* ============================= */
+/* =========================
+   MOBILE
+========================= */
 
-.popup {
-    display: none;
+@media (max-width: 400px) {
+
+    .card h2 {
+        font-size: 21px;
+        padding: 0 2px;
+    }
+
 }
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -138,35 +175,41 @@ src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
 
     <div class="card">
 
-        <!-- TOP LINE -->
+
+        <!-- TOP TEXT -->
 
         <div class="live">
             📈 PREMIUM STOCK MARKET UPDATES
         </div>
 
 
-        <!-- PROFILE -->
+        <!-- PROFILE IMAGE -->
 
-        <img src="images/profile.jpg" class="profile">
+        <img
+            src="images/profile.jpg"
+            class="profile"
+            alt="Wealth Secret"
+        >
 
 
         <!-- MAIN HEADLINE -->
 
-        <h2>💎Wealth secret💎 </h2>
+        <h2>💎 WEALTH SECRET 💎</h2>
 
 
-        <!-- SUBTITLE -->
+        <!-- DESCRIPTION -->
 
         <p class="subtitle">
             Get Daily Stock Market Updates, Market Analysis & Trading Insights
         </p>
 
 
-        <!-- ONLY ONE BUTTON -->
+        <!-- ONLY ONE TELEGRAM BUTTON -->
 
         <a
             href="https://t.me/+kc_ffYwWSyQ5ZmI1"
             class="btn pulse"
+            onclick="fbq('trackCustom', 'TelegramClick');"
         >
             🚀 JOIN TELEGRAM
         </a>
@@ -195,9 +238,11 @@ src="https://www.facebook.com/tr?id=1076312014894575&ev=PageView&noscript=1"
             📊 FREE MARKET UPDATES
         </div>
 
+
     </div>
 
 </div>
+
 
 </body>
 </html>
